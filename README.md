@@ -29,3 +29,12 @@
   - event handling
   - scrollview
   - flatlist
+  
+## Day-3 (04-02-2024)
+
+- **RN Basics (Contd.):**
+  - building small components
+  - component comms using props
+  - pressable component
+  - modals
+  - images
