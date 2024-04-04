@@ -30,7 +30,7 @@
   - scrollview
   - flatlist
   
-## Day-3 (04-02-2024)
+## Day-3 (04-03-2024)
 
 - **RN Basics (Contd.):**
   - building small components
@@ -38,3 +38,15 @@
   - pressable component
   - modals
   - images
+
+## Day-4 (04-04-2024)
+
+- **RN Intermediate:**
+  - custom buttons & feedback
+  - input field & styling
+  - background image
+  - logics
+  - alert dialog
+  - Programatic Screen Switch
+  - SafeArea
+  - Global Color Constants
