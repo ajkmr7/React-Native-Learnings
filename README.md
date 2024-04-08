@@ -57,3 +57,12 @@
   - logics (randomize, search)
   - useEffect
   - reusable components
+  
+## Day-6 (04-08-2024)
+
+- **RN Intermediate:**
+  - cascading styles
+  - icon buttons
+  - custom fonts
+  - foreground image
+  - nested text

@@ -2,9 +2,10 @@ import { useState } from "react";
 import { TextInput, View, StyleSheet, Alert, Text } from "react-native";
 
 import Colors from "../constants/Colors";
-import PrimaryButton from "../components/PrimaryButton";
-import Card from "../components/Card";
-import Title from "../components/Title";
+
+import PrimaryButton from "../components/reusable/PrimaryButton";
+import Card from "../components/reusable/Card";
+import Title from "../components/reusable/Title";
 
 const NumberPickerScreen = ({ onNumberPicked }) => {
   const [enteredNumber, setEnteredNumber] = useState("");
@@ -26,7 +27,7 @@ const NumberPickerScreen = ({ onNumberPicked }) => {
 
   return (
     <View style={styles.container}>
-      <Title>Guess My Number</Title>
+      <Title style={{fontSize: 36}}>Guess My Number</Title>
       <Card>
       <Text style={styles.instructionText}>Enter a number</Text>
         <TextInput
@@ -61,7 +62,7 @@ const styles = StyleSheet.create({
   instructionText: {
     color: Colors.accent500,
     fontSize: 20,
-    fontWeight: "bold"
+    fontFamily: "open-sans-bold",
   },
   numberInput: {
     textAlign: "center",
@@ -72,7 +73,7 @@ const styles = StyleSheet.create({
     borderColor: Colors.accent500,
     borderBottomWidth: 2,
     marginVertical: 8,
-    fontWeight: "bold",
+    fontFamily: "open-sans-bold",
   },
   buttonStack: {
     justifyContent: "center",
