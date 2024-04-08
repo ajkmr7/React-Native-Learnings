@@ -50,3 +50,10 @@
   - Programatic Screen Switch
   - SafeArea
   - Global Color Constants
+  
+## Day-5 (04-05-2024)
+
+- **RN Intermediate:**
+  - logics (randomize, search)
+  - useEffect
+  - reusable components

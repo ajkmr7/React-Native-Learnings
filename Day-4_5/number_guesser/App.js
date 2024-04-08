@@ -5,16 +5,24 @@ import Colors from "./constants/Colors";
 
 import NumberPickerScreen from "./screens/NumberPickerScreen";
 import NumberGuesserScreen from "./screens/NumberGuesserScreen";
+import ResultScreen from "./screens/ResultScreen";
 
 export default function App() {
   const [userNumber, setUserNumber] = useState();
+  const [isGameOver, setIsGameOver] = useState(false);
 
   const pickedNumberHandler = (pickedNumber) => setUserNumber(pickedNumber);
+
+  const gameOverHandler = () => setIsGameOver(true);
 
   let screen = <NumberPickerScreen onNumberPicked={pickedNumberHandler} />;
 
   if (userNumber) {
-    screen = <NumberGuesserScreen />;
+    screen = <NumberGuesserScreen userNumber={userNumber} onGameOver={gameOverHandler}/>;
+  }
+
+  if(isGameOver) {
+    screen = <ResultScreen/>;
   }
 
   return (
