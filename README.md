@@ -66,3 +66,10 @@
   - custom fonts
   - foreground image
   - nested text
+  - dynamic widths
+  - dimensions api
+  - dynamic sizing based on screen orientation 
+  - KeyboardAvoidingView
+  - useWindowDimensions
+  - platform-specific styling
+  - status bar
