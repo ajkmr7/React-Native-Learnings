@@ -73,3 +73,11 @@
   - useWindowDimensions
   - platform-specific styling
   - status bar
+
+## Day-7 (04-09-2024)
+
+- **RN Intermediate:**
+  - react navigation using native stack navigator
+  - navigation useNavigation
+  - routes useRoute
+  - stack & screen styling options
