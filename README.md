@@ -81,3 +81,12 @@
   - navigation useNavigation
   - routes useRoute
   - stack & screen styling options
+  
+## Day-8 (04-10-2024)
+
+- **RN Intermediate:**
+  - dynamic setting of navigation options
+  - header icon buttons 
+  - drawer navigation
+  - bottom tabbar navigation
+  - nesting navigators
