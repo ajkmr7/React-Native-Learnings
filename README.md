@@ -41,7 +41,7 @@
 
 ## Day-4 (04-04-2024)
 
-- **RN Intermediate:**
+- **RN Basics (Contd.):**
   - custom buttons & feedback
   - input field & styling
   - background image
@@ -53,14 +53,14 @@
   
 ## Day-5 (04-05-2024)
 
-- **RN Intermediate:**
+- **RN Basics (Contd.):**
   - logics (randomize, search)
   - useEffect
   - reusable components
   
 ## Day-6 (04-08-2024)
 
-- **RN Intermediate:**
+- **RN Basics (Contd.):**
   - cascading styles
   - icon buttons
   - custom fonts
@@ -84,9 +84,18 @@
   
 ## Day-8 (04-10-2024)
 
-- **RN Intermediate:**
+- **RN Intermediate (Contd.):**
   - dynamic setting of navigation options
   - header icon buttons 
   - drawer navigation
   - bottom tabbar navigation
   - nesting navigators
+
+## Day-9 (04-12-2024)
+
+- **RN Intermediate (Contd.):**
+  - Context API: createContext, useContext
+  - Redux Toolkit: slices, reducer, dispatch
+  - Date Formatting
+  - Closing a modal programmatically
+  - Context API with reducers for handling complex data ops

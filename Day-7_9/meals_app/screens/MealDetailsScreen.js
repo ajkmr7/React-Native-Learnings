@@ -1,5 +1,7 @@
-import { useLayoutEffect } from "react";
+import { useContext, useLayoutEffect } from "react";
 import { View, Text, Image, StyleSheet, ScrollView } from "react-native";
+import { useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 
 import { MEALS } from "../data/dummy-data";
 
@@ -7,26 +9,47 @@ import MealDetails from "../components/MealDetails";
 import Subtitle from "../components/meal_detail/Subtitle";
 import List from "../components/meal_detail/List";
 import IconButton from "../components/IconButton";
+import favorites from "../store/redux/favorites";
+import { FavoritesContext } from "../store/context/favorites-context";
+import { addFavorite, removeFavorite } from "../store/redux/favorites";
 
 const MealDetailsScreen = ({ route, navigation }) => {
+  // const favoritesContext = useContext(FavoritesContext);
+
+  const favoriteMealIds = useSelector((state) => state.favoriteMeals.ids);
+  const dispatch = useDispatch();
+
   const mealId = route.params.mealId;
 
   const selectedMeal = MEALS.find((meal) => meal.id === mealId);
 
-  const headerButtonPressHandler = () => {};
+  // const isFavorite = favoritesContext.ids.includes(mealId);
+  const isFavorite = favoriteMealIds.includes(mealId);
+
+  // const toggleFavoriteStatusHandler = () => {
+  //   isFavorite
+  //     ? favoritesContext.removeFavorite(mealId)
+  //     : favoritesContext.addFavorite(mealId);
+  // };
+
+  const toggleFavoriteStatusHandler = () => {
+    isFavorite
+      ? dispatch(removeFavorite({ id: mealId }))
+      : dispatch(addFavorite({ id: mealId }));
+  };
 
   useLayoutEffect(() =>
     navigation.setOptions(
       {
         headerRight: () => (
           <IconButton
-            iconName="star"
+            iconName={isFavorite ? "star" : "star-outline"}
             color="white"
-            onPress={headerButtonPressHandler}
+            onPress={toggleFavoriteStatusHandler}
           />
         ),
       },
-      [navigation, headerButtonPressHandler]
+      [navigation, toggleFavoriteStatusHandler]
     )
   );
 
