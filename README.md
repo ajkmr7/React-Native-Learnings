@@ -29,7 +29,7 @@
   - event handling
   - scrollview
   - flatlist
-  
+
 ## Day-3 (04-03-2024)
 
 - **RN Basics (Contd.):**
@@ -50,14 +50,14 @@
   - Programatic Screen Switch
   - SafeArea
   - Global Color Constants
-  
+
 ## Day-5 (04-05-2024)
 
 - **RN Basics (Contd.):**
   - logics (randomize, search)
   - useEffect
   - reusable components
-  
+
 ## Day-6 (04-08-2024)
 
 - **RN Basics (Contd.):**
@@ -68,7 +68,7 @@
   - nested text
   - dynamic widths
   - dimensions api
-  - dynamic sizing based on screen orientation 
+  - dynamic sizing based on screen orientation
   - KeyboardAvoidingView
   - useWindowDimensions
   - platform-specific styling
@@ -81,12 +81,12 @@
   - navigation useNavigation
   - routes useRoute
   - stack & screen styling options
-  
+
 ## Day-8 (04-10-2024)
 
 - **RN Intermediate (Contd.):**
   - dynamic setting of navigation options
-  - header icon buttons 
+  - header icon buttons
   - drawer navigation
   - bottom tabbar navigation
   - nesting navigators
@@ -99,3 +99,11 @@
   - Date Formatting
   - Closing a modal programmatically
   - Context API with reducers for handling complex data ops
+
+## Day-10 (04-15-2024)
+
+- **RN Intermediate (Contd.):**
+  - Custom Input Components
+  - Managing Form Creation, State & Submission
+  - Setting Default Values
+  - Validation & Visual Feedback
