@@ -4,7 +4,7 @@
 
 - **RN Prerequisites:**
   - Introduction
-  - Installation & setup
+  - Installation & setup using Expo
 - **JavaScript refresh:**
   - var, let, const
   - functions
@@ -107,3 +107,14 @@
   - Managing Form Creation, State & Submission
   - Setting Default Values
   - Validation & Visual Feedback
+
+## Day-11 (04-16-2024)
+
+- **RN Intermediate (Contd.):**
+
+  - HTTP Requests with Axios
+  - Making Firebase Backend and Local State in sync
+  - Loading & Error States
+
+- **RN CLI:**
+  - Installation & setup using RN CLI
